@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/ic_helper_background"
+    android:padding="@dimen/widget_margin"
+    android:id="@+id/linearLayout2">
+
+    <ImageView
+        android:id="@+id/imageView_marker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/nova"
+        tools:layout_conversion_absoluteHeight="94dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_conversion_absoluteWidth="160dp" />
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/maplestory"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:text="팀노바 공식 홈페이지"/>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/maplestory"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:text="팀노바 멤버 홈페이지" />
+
+</LinearLayout>

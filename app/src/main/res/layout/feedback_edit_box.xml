@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edittext_dialog_feedback_person"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="피드백 해준 사람을 입력하세요"
+        android:inputType="text"
+        android:fontFamily="@font/maplelight"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/Button_dialog_feedback_date"/>
+
+    <Button
+        android:id="@+id/Button_dialog_feedback_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="피드백 받은 날짜를 선택해주세요"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:fontFamily="@font/maplelight"
+        android:background="@drawable/button_round"
+        app:layout_constraintBottom_toTopOf="@id/edittext_dialog_feedback_contents"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edittext_dialog_feedback_person" />
+
+    <EditText
+        android:id="@+id/edittext_dialog_feedback_contents"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="피드백 한 내용을 입력하세요"
+        android:inputType="textMultiLine"
+        android:fontFamily="@font/maplelight"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Button_dialog_feedback_date"
+        app:layout_constraintBottom_toTopOf="@id/button_dialog_submit"/>
+
+    <Button
+        android:id="@+id/button_dialog_submit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/maplestory"
+        android:background="@drawable/button_round"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_dialog_feedback_contents" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

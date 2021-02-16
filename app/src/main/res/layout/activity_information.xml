@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            android:fillViewport="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraint_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="1000dp"
+                    tools:context=".MainActivity.RecordActivity">
+
+                    <HorizontalScrollView
+                        android:id="@+id/weather_scrollView"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="105dp"
+                        android:layout_weight="1"
+                        android:scrollbars="none"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+
+                            android:layout_width="fill_parent"
+
+                            android:layout_height="fill_parent"
+
+                            android:orientation="horizontal">
+
+                            <!-- ImageView, Button 등을 가로로 배치 -->
+
+                            <ImageView
+                                android:layout_width="200dp"
+                                android:layout_height="150dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/weather" />
+
+                            <ImageView
+                                android:layout_width="200dp"
+                                android:layout_height="150dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/finedust" />
+
+                            <ImageView
+                                android:id="@+id/ImageView_COVID"
+                                android:layout_width="200dp"
+                                android:layout_height="150dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/corona19" />
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                    <HorizontalScrollView
+                        android:id="@+id/it_scrollView"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="360dp"
+                        android:layout_weight="1"
+                        android:scrollbars="none"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+
+                            android:id="@+id/ll_layout"
+
+                            android:layout_width="fill_parent"
+
+                            android:layout_height="fill_parent"
+
+                            android:orientation="horizontal">
+
+                            <!-- ImageView, Button 등을 가로로 배치 -->
+
+                            <ImageView
+                                android:id="@+id/ImageView_Bloter"
+                                android:layout_width="200dp"
+                                android:layout_height="150dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/bloter" />
+
+                            <ImageView
+                                android:id="@+id/ImageView_GeekNews"
+                                android:layout_width="200dp"
+                                android:layout_height="150dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/geeknews" />
+
+                            <ImageView
+                                android:id="@+id/ImageView_Etnews"
+                                android:layout_width="200dp"
+                                android:layout_height="150dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/enews" />
+
+                            <ImageView
+                                android:id="@+id/ImageView_Zdnet"
+                                android:layout_width="200dp"
+                                android:layout_height="150dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/zdnet" />
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                    <TextView
+                        android:id="@+id/TextView_IT_information"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="24dp"
+                        android:gravity="center"
+                        android:text="날씨"
+                        android:fontFamily="@font/maplestory"
+                        android:textColor="@color/black"
+                        android:textSize="45sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView_IT_information2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="280dp"
+                        android:gravity="center"
+                        android:text="IT정보"
+                        android:fontFamily="@font/maplestory"
+                        android:textColor="@color/black"
+                        android:textSize="45sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView_IT_information3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="535dp"
+                        android:gravity="center"
+                        android:text="팀노바 사이트"
+                        android:fontFamily="@font/maplestory"
+                        android:textColor="@color/black"
+                        android:textSize="45sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ImageView_Public"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/tnv1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView_IT_information3" />
+
+                    <ImageView
+                        android:id="@+id/ImageView_Member"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:src="@drawable/tnv2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ImageView_Public" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:tabIndicatorColor="@color/white">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_record"
+                android:text="기록하기" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_study"
+                android:text="공부하기" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_info"
+                android:text="@string/information" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_map"
+                android:text="지도" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
